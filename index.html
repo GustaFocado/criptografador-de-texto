@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criptografador de texto</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+  
+    <main class="main">
+        <div class="container">
+            <img src="assets/Astronaltapequeno.png" class="logo" alt="Astronauta Logo" />
+            <section>
+                <textarea id="texto_input" class="texto_input" placeholder="Digite seu texto aqui..."></textarea>
+                <div class="form_group">
+                    <p class="emoji">&#9888;</p>
+                    <label for="texto_input" class="input_texto">Apenas letras minúsculas e sem acento!</label>
+                </div>
+                <div class="botoes">
+                    <button onclick="criptografar()" class="btn_criptografar">
+                        Criptografar
+                    </button>
+                    <button onclick="descriptografar()" class="btn_descriptografar">
+                        Descriptografar
+                    </button>
+                </div>
+            </section>
+            <section>
+                <div class="texto_exibido">
+                    <textarea id="texto_exibido" class="div_saida" rows="5" readonly
+                        placeholder="Seu texto vai sair aqui!"></textarea>
+                </div>
+                <div class="botoes_inferiores">
+                    <button onclick="limparCampos()" class="btn_limpar_campos">
+                        Limpar Campos
+                    </button>
+                    <button onclick="copiarTexto()" class="btn_copiar_texto">
+                        Copiar Texto
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div id="mensagem" class="mensagem"></div>
+    <footer class="rodape">Desenvolvido por Gustavo</footer>
+    <script src="./java.s/script.js"></script>
+</body>
+
+</html>
